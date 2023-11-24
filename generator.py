@@ -9,7 +9,7 @@ class Generator:
         self.__is_upper = upper  # будут ли буквы с верхним регистром
         self.__is_lower = lower  # будут ли буквы с нижн регистром
         self.__is_numbers = number  # будут ли цифры
-        self.__is_symbols = symbol  # будут ли символы (англ)
+        self.__is_symbols = symbol  # будут ли символы(punctuation)
 
     def generate(self):
         chars = self.__get_character_set()
