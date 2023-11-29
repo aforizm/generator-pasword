@@ -5,7 +5,7 @@ import secrets
 
 class Generator:
     def __init__(self, length: int, lower: bool, number: bool, symbol: bool, upper: bool = True):
-         """
+        """
         Initializes a Generator object with the specified parameters.
 
         Args:
@@ -22,7 +22,7 @@ class Generator:
         self.__is_symbols = symbol  # будут ли символы(punctuation)
 
     def generate(self):
-          """
+        """
         Generates a password based on the specified parameters.
 
         Returns:
@@ -39,7 +39,7 @@ class Generator:
         return password
 
     def __get_character_set(self):
-         """
+        """
         Returns a list of characters based on the specified parameters.
 
         Returns:
@@ -63,7 +63,7 @@ class Generator:
         return chars
 
     def __generate_password(self, chars):
-         """
+        """
         Generates a password using the provided character set.
 
         Args:
@@ -75,7 +75,7 @@ class Generator:
         return ''.join(secrets.choice(chars) for _ in range(self.__length))
 
     def __meets_requirements(self, password):
-         """
+        """
         Checks if the generated password meets the requirements.
 
         Args:
